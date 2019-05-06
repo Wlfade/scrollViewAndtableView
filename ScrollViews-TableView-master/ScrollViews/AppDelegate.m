@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomeController.h"
 #import "NextViewController.h"
+#import "ThiredTestViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -25,12 +26,13 @@
     // 设置根控制器
 //    HomeController *homeVC = [[HomeController alloc] init];
 //    RootNavigationController *rootVC = [[RootNavigationController alloc] initWithRootViewController:homeVC];
-
+   
+//    NextViewController *nextVC = [[NextViewController alloc]init];
+//    RootNavigationController *rootVC = [[RootNavigationController alloc] initWithRootViewController:nextVC];
     
-    NextViewController *nextVC = [[NextViewController alloc]init];
+    ThiredTestViewController *nextVC = [[ThiredTestViewController alloc]init];
     RootNavigationController *rootVC = [[RootNavigationController alloc] initWithRootViewController:nextVC];
 
-    
     self.window.rootViewController = rootVC;
     
     if (@available(iOS 11.0, *)) {

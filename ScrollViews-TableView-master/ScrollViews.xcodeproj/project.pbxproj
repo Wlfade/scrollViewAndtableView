@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4ED4CB8D227EC0A500F60D13 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB8C227EC0A500F60D13 /* NextViewController.m */; };
+		4ED4CB90227FDACA00F60D13 /* ThiredTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB8F227FDACA00F60D13 /* ThiredTestViewController.m */; };
+		4ED4CB932280313E00F60D13 /* NewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB922280313E00F60D13 /* NewListViewController.m */; };
+		4ED4CB9722803F9400F60D13 /* NewFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB9622803F9400F60D13 /* NewFourthViewController.m */; };
 		CE43CEAA2019B286005452BB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43CE922019B286005452BB /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		CE43CEAB2019B286005452BB /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43CE9B2019B286005452BB /* ViewController+MASAdditions.m */; };
 		CE43CEAC2019B286005452BB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43CE9F2019B286005452BB /* MASCompositeConstraint.m */; };
@@ -63,6 +66,12 @@
 		089754DFE16B881980F0EBCA /* libPods-ScrollViews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScrollViews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED4CB8B227EC0A500F60D13 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		4ED4CB8C227EC0A500F60D13 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		4ED4CB8E227FDACA00F60D13 /* ThiredTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThiredTestViewController.h; sourceTree = "<group>"; };
+		4ED4CB8F227FDACA00F60D13 /* ThiredTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThiredTestViewController.m; sourceTree = "<group>"; };
+		4ED4CB912280313E00F60D13 /* NewListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewListViewController.h; sourceTree = "<group>"; };
+		4ED4CB922280313E00F60D13 /* NewListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewListViewController.m; sourceTree = "<group>"; };
+		4ED4CB9522803F9400F60D13 /* NewFourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewFourthViewController.h; sourceTree = "<group>"; };
+		4ED4CB9622803F9400F60D13 /* NewFourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewFourthViewController.m; sourceTree = "<group>"; };
 		CE43CE912019B286005452BB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CE43CE922019B286005452BB /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		CE43CE932019B286005452BB /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -159,6 +168,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ED4CB9422803F6A00F60D13 /* New抽取 */ = {
+			isa = PBXGroup;
+			children = (
+				4ED4CB912280313E00F60D13 /* NewListViewController.h */,
+				4ED4CB922280313E00F60D13 /* NewListViewController.m */,
+				4ED4CB9522803F9400F60D13 /* NewFourthViewController.h */,
+				4ED4CB9622803F9400F60D13 /* NewFourthViewController.m */,
+			);
+			path = "New抽取";
+			sourceTree = "<group>";
+		};
 		63136219D0FD2BD32F06AC1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,12 +333,15 @@
 		CE469C1A1F0638A900710078 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4ED4CB9422803F6A00F60D13 /* New抽取 */,
 				CE469C1B1F0638D200710078 /* HomeController.h */,
 				CE469C1C1F0638D200710078 /* HomeController.m */,
 				CE469C1E1F06393F00710078 /* ListController.h */,
 				CE469C1F1F06393F00710078 /* ListController.m */,
 				4ED4CB8B227EC0A500F60D13 /* NextViewController.h */,
 				4ED4CB8C227EC0A500F60D13 /* NextViewController.m */,
+				4ED4CB8E227FDACA00F60D13 /* ThiredTestViewController.h */,
+				4ED4CB8F227FDACA00F60D13 /* ThiredTestViewController.m */,
 			);
 			name = Classes;
 			path = Main/Classes;
@@ -347,7 +370,6 @@
 				E7ACEFD6B9CF27A43BE87EF1 /* Pods-ScrollViews.debug.xcconfig */,
 				0288C535443620A5D17C80F9 /* Pods-ScrollViews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -548,6 +570,7 @@
 				CEBFE421204E6DD200AEE96D /* LGAlertView.m in Sources */,
 				CE469BF31F06375000710078 /* BaseController.m in Sources */,
 				CE469C201F06393F00710078 /* ListController.m in Sources */,
+				4ED4CB90227FDACA00F60D13 /* ThiredTestViewController.m in Sources */,
 				CE43CEAA2019B286005452BB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CEBFE41B204E6B4500AEE96D /* NSDictionary+Extension.m in Sources */,
 				CE43CEAF2019B286005452BB /* NSArray+MASAdditions.m in Sources */,
@@ -556,10 +579,12 @@
 				CE469C161F06376800710078 /* LGActionSheet.m in Sources */,
 				CE469C191F06376800710078 /* LGTextView.m in Sources */,
 				CEBFE41A204E6B4500AEE96D /* UIImage+Extension.m in Sources */,
+				4ED4CB932280313E00F60D13 /* NewListViewController.m in Sources */,
 				CE43CEB12019B286005452BB /* MASConstraint.m in Sources */,
 				CE469C1D1F0638D200710078 /* HomeController.m in Sources */,
 				CE469BBB1F06371700710078 /* main.m in Sources */,
 				CE43CEB02019B286005452BB /* View+MASAdditions.m in Sources */,
+				4ED4CB9722803F9400F60D13 /* NewFourthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
