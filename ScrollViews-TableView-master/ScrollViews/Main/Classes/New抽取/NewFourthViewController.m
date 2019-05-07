@@ -167,7 +167,9 @@ static CGFloat const btnW = 70;
 //    childVC.view.frame = CGRectMake(X, 0, kScreenWidth, H);
     
     
-    childVC.viewFrame = CGRectMake(X, 0, kScreenWidth, H);
+//    childVC.viewFrame = CGRectMake(X, 0, kScreenWidth, H);
+    
+    [childVC resetTheViewFrame:CGRectMake(X, 0, kScreenWidth, H)];
     
     [self.backgroundScrollView addSubview:childVC.view];
     
