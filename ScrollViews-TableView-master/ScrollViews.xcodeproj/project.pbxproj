@@ -11,6 +11,7 @@
 		4ED4CB90227FDACA00F60D13 /* ThiredTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB8F227FDACA00F60D13 /* ThiredTestViewController.m */; };
 		4ED4CB932280313E00F60D13 /* NewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB922280313E00F60D13 /* NewListViewController.m */; };
 		4ED4CB9722803F9400F60D13 /* NewFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB9622803F9400F60D13 /* NewFourthViewController.m */; };
+		4ED4CB9C2281283A00F60D13 /* NextVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4CB9B2281283A00F60D13 /* NextVC.storyboard */; };
 		CE43CEAA2019B286005452BB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43CE922019B286005452BB /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		CE43CEAB2019B286005452BB /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43CE9B2019B286005452BB /* ViewController+MASAdditions.m */; };
 		CE43CEAC2019B286005452BB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43CE9F2019B286005452BB /* MASCompositeConstraint.m */; };
@@ -72,6 +73,7 @@
 		4ED4CB922280313E00F60D13 /* NewListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewListViewController.m; sourceTree = "<group>"; };
 		4ED4CB9522803F9400F60D13 /* NewFourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewFourthViewController.h; sourceTree = "<group>"; };
 		4ED4CB9622803F9400F60D13 /* NewFourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewFourthViewController.m; sourceTree = "<group>"; };
+		4ED4CB9B2281283A00F60D13 /* NextVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NextVC.storyboard; sourceTree = "<group>"; };
 		CE43CE912019B286005452BB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CE43CE922019B286005452BB /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		CE43CE932019B286005452BB /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 				CE469C1F1F06393F00710078 /* ListController.m */,
 				4ED4CB8B227EC0A500F60D13 /* NextViewController.h */,
 				4ED4CB8C227EC0A500F60D13 /* NextViewController.m */,
+				4ED4CB9B2281283A00F60D13 /* NextVC.storyboard */,
 				4ED4CB8E227FDACA00F60D13 /* ThiredTestViewController.h */,
 				4ED4CB8F227FDACA00F60D13 /* ThiredTestViewController.m */,
 			);
@@ -482,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED4CB9C2281283A00F60D13 /* NextVC.storyboard in Resources */,
 				CE469BC91F06371700710078 /* LaunchScreen.storyboard in Resources */,
 				CE469BC61F06371700710078 /* Assets.xcassets in Resources */,
 				CE469BC41F06371700710078 /* Main.storyboard in Resources */,

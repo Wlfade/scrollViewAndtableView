@@ -19,8 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 /** tablViewHeadView的占位高度 */
 @property (nonatomic, assign) CGFloat placeHoldHeight;
 
-/** 视图的frame */
-@property(nonatomic,assign)CGRect viewFrame;
+///** 视图的frame */
+//@property(nonatomic,assign)CGRect viewFrame;
+
+///** 赋值完成的block */
+//@property(nonatomic,strong) void(^testBlock)(void);
+
+- (void)resetTheViewFrame:(CGRect)viewFrame;
 @end
 
 NS_ASSUME_NONNULL_END

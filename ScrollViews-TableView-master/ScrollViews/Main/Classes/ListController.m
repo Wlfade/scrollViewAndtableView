@@ -52,4 +52,7 @@
     cell.textLabel.text = [NSString stringWithFormat:@"闲来无事卖个萌 %ld",indexPath.row];
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

@@ -19,9 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 添加window
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
     
     // 设置根控制器
 //    HomeController *homeVC = [[HomeController alloc] init];
@@ -30,14 +30,14 @@
 //    NextViewController *nextVC = [[NextViewController alloc]init];
 //    RootNavigationController *rootVC = [[RootNavigationController alloc] initWithRootViewController:nextVC];
     
-    ThiredTestViewController *nextVC = [[ThiredTestViewController alloc]init];
-    RootNavigationController *rootVC = [[RootNavigationController alloc] initWithRootViewController:nextVC];
-
-    self.window.rootViewController = rootVC;
-    
-    if (@available(iOS 11.0, *)) {
-        [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    }
+//    ThiredTestViewController *nextVC = [[ThiredTestViewController alloc]init];
+//    RootNavigationController *rootVC = [[RootNavigationController alloc] initWithRootViewController:nextVC];
+//
+//    self.window.rootViewController = rootVC;
+//    
+//    if (@available(iOS 11.0, *)) {
+//        [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    }
     return YES;
 }
 
