@@ -16,7 +16,7 @@
 @property(nonatomic,assign)CGRect viewFrame;
 
 /** 是否已经设置了KVO */
-@property (nonatomic, assign) <#Class#> <#property#>;
+@property (nonatomic, assign) BOOL isSetKVO;
 @end
 
 @implementation NewListViewController
@@ -29,6 +29,11 @@
     self.view.frame = viewFrame;
     
     self.tableView.frame = self.view.bounds;
+    
+    if (self.isSetKVO == NO) {
+        [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+        self.isSetKVO = YES;
+    }
 }
 //重新设置控件的frame
 //- (void)setViewFrame:(CGRect)viewFrame{
@@ -63,7 +68,7 @@
      }
      */
     
-    [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+//    [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 
 //    [social1.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 
