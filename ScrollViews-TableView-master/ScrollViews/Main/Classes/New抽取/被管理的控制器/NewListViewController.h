@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@class NewListViewController;
+@protocol NewListViewControllerDelegate <NSObject>
+
+@optional
+- (void)NewListViewControllerLinkage:(NewListViewController *)viewController withTheLinkAgetOffsetY:(CGFloat)offsetYY;
+
+@end
 
 @interface NewListViewController : UIViewController
 
@@ -16,16 +23,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *dataMutArr;
 
-/** tablViewHeadView的占位高度 */
-@property (nonatomic, assign) CGFloat placeHoldHeight;
-
+/** 代理 */
+@property(nonatomic,weak)id <NewListViewControllerDelegate> delegate;
 ///** 视图的frame */
 //@property(nonatomic,assign)CGRect viewFrame;
 
 ///** 赋值完成的block */
 //@property(nonatomic,strong) void(^testBlock)(void);
 
+
+/**
+ 重新设置视图的frame
+
+ @param viewFrame frame
+ */
 - (void)resetTheViewFrame:(CGRect)viewFrame;
+
+
+/**
+ 设置偏移量占位视图
+
+ @param contentInset 视图的高度
+ */
+- (void)setTableViewContentInset:(CGFloat)contentInset;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ECD908422828CB70009CCCE /* TestListOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD908322828CB70009CCCE /* TestListOneViewController.m */; };
+		4ECD908822828CF10009CCCE /* TestListTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD908722828CF10009CCCE /* TestListTwoViewController.m */; };
 		4ED4CB8D227EC0A500F60D13 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB8C227EC0A500F60D13 /* NextViewController.m */; };
 		4ED4CB90227FDACA00F60D13 /* ThiredTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB8F227FDACA00F60D13 /* ThiredTestViewController.m */; };
 		4ED4CB932280313E00F60D13 /* NewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4CB922280313E00F60D13 /* NewListViewController.m */; };
@@ -65,6 +67,10 @@
 /* Begin PBXFileReference section */
 		0288C535443620A5D17C80F9 /* Pods-ScrollViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViews.release.xcconfig"; path = "Target Support Files/Pods-ScrollViews/Pods-ScrollViews.release.xcconfig"; sourceTree = "<group>"; };
 		089754DFE16B881980F0EBCA /* libPods-ScrollViews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScrollViews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ECD908222828CB70009CCCE /* TestListOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListOneViewController.h; sourceTree = "<group>"; };
+		4ECD908322828CB70009CCCE /* TestListOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListOneViewController.m; sourceTree = "<group>"; };
+		4ECD908622828CF10009CCCE /* TestListTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListTwoViewController.h; sourceTree = "<group>"; };
+		4ECD908722828CF10009CCCE /* TestListTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListTwoViewController.m; sourceTree = "<group>"; };
 		4ED4CB8B227EC0A500F60D13 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		4ED4CB8C227EC0A500F60D13 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		4ED4CB8E227FDACA00F60D13 /* ThiredTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThiredTestViewController.h; sourceTree = "<group>"; };
@@ -170,13 +176,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4ED4CB9422803F6A00F60D13 /* New抽取 */ = {
+		4ECD908522828CBE0009CCCE /* 被管理的控制器 */ = {
 			isa = PBXGroup;
 			children = (
 				4ED4CB912280313E00F60D13 /* NewListViewController.h */,
 				4ED4CB922280313E00F60D13 /* NewListViewController.m */,
+				4ECD908222828CB70009CCCE /* TestListOneViewController.h */,
+				4ECD908322828CB70009CCCE /* TestListOneViewController.m */,
+				4ECD908622828CF10009CCCE /* TestListTwoViewController.h */,
+				4ECD908722828CF10009CCCE /* TestListTwoViewController.m */,
+			);
+			path = "被管理的控制器";
+			sourceTree = "<group>";
+		};
+		4ECD90892282C6DF0009CCCE /* 管理控制器 */ = {
+			isa = PBXGroup;
+			children = (
 				4ED4CB9522803F9400F60D13 /* NewFourthViewController.h */,
 				4ED4CB9622803F9400F60D13 /* NewFourthViewController.m */,
+			);
+			path = "管理控制器";
+			sourceTree = "<group>";
+		};
+		4ED4CB9422803F6A00F60D13 /* New抽取 */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD90892282C6DF0009CCCE /* 管理控制器 */,
+				4ECD908522828CBE0009CCCE /* 被管理的控制器 */,
 			);
 			path = "New抽取";
 			sourceTree = "<group>";
@@ -571,6 +597,7 @@
 				CE43CEAD2019B286005452BB /* MASConstraintMaker.m in Sources */,
 				CE43CEB22019B286005452BB /* MASViewConstraint.m in Sources */,
 				CE469BBE1F06371700710078 /* AppDelegate.m in Sources */,
+				4ECD908422828CB70009CCCE /* TestListOneViewController.m in Sources */,
 				CEBFE421204E6DD200AEE96D /* LGAlertView.m in Sources */,
 				CE469BF31F06375000710078 /* BaseController.m in Sources */,
 				CE469C201F06393F00710078 /* ListController.m in Sources */,
@@ -578,6 +605,7 @@
 				CE43CEAA2019B286005452BB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CEBFE41B204E6B4500AEE96D /* NSDictionary+Extension.m in Sources */,
 				CE43CEAF2019B286005452BB /* NSArray+MASAdditions.m in Sources */,
+				4ECD908822828CF10009CCCE /* TestListTwoViewController.m in Sources */,
 				4ED4CB8D227EC0A500F60D13 /* NextViewController.m in Sources */,
 				CE43CEAC2019B286005452BB /* MASCompositeConstraint.m in Sources */,
 				CE469C161F06376800710078 /* LGActionSheet.m in Sources */,
