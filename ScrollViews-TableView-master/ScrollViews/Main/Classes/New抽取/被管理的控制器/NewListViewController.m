@@ -40,11 +40,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor purpleColor];
+    
     self.tableView = [[UITableView alloc]init];
     //必须在设置默认的tablView时设置一个默认的frame 不然在加载出新的tablView时偏移有问题
     self.view.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     self.tableView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
 
+    self.tableView.backgroundColor = [UIColor cyanColor];
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;

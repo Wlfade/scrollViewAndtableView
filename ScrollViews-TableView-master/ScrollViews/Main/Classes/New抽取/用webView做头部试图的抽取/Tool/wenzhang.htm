@@ -1,0 +1,694 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, target-densitydpi=high-dpi, min-width=480px, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+            <!--    <link rel="stylesheet" type="text/css" href="wenzhang.css">-->
+            <style>
+                @media screen and (min-width:240px) {
+                    html,
+                    body,
+                    button,
+                    input,
+                    select,
+                    textarea {
+                        font-size: 9px
+                    }
+                }
+            
+            @media screen and (min-width:320px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 12px
+                }
+            }
+            
+            @media screen and (min-width:374px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 14px
+                }
+            }
+            
+            @media screen and (min-width:400px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 15px
+                }
+            }
+            
+            @media screen and (min-width:413px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 15.5px
+                }
+            }
+            
+            @media screen and (min-width:426px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 16px
+                }
+            }
+            
+            @media screen and (min-width:450px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 18px
+                }
+            }
+            
+            @media screen and (min-width:480px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 18px
+                }
+            }
+            
+            @media screen and (min-width:540px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 20.25px
+                }
+            }
+            
+            @media screen and (min-width:590px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 22.13px
+                }
+            }
+            
+            @media screen and (min-width:600px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 22.5px
+                }
+            }
+            
+            @media screen and (min-width:640px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 24px
+                }
+            }
+            
+            @media screen and (min-width:720px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 27px
+                }
+            }
+            
+            @media screen and (min-width:800px) {
+                html,
+                body,
+                button,
+                input,
+                select,
+                textarea {
+                    font-size: 30px
+                }
+            }
+            
+            html,
+            div,
+            body,
+            a,
+            p,
+            h3,
+            span,
+            th,
+            td,
+            tr,
+            table {
+                padding: 0;
+                margin: 0;
+            }
+            
+            body {
+                padding: 0 0.75rem;
+                color: #333;
+                font-size: 1.155rem;
+                line-height: 1.875rem;
+            }
+            
+            p,
+            a {
+                font-size: 1.155rem;
+                line-height: 1.875rem;
+            }
+            ul, li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            * {
+                word-wrap: break-word;
+                word-break: break-all;
+                text-decoration: none;
+                max-width: 100%;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            }
+            
+            th {
+                font-weight: normal;
+            }
+            
+            a[data-type="tag"][ data-tag="project"] {
+                display: block;
+                height: 4.5rem;
+                margin: 0.541667rem 0 0.416667rem;
+            }
+            
+            span[data-type="tag"][data-tag="race"] {
+                display: block;
+                height: 4.908333rem;
+                margin: 0.666667rem 0 1.041667rem;
+            }
+            
+            .money {
+                position: relative;
+                margin: 0.541667rem 0 0.416667rem;
+            }
+            
+            .money .logo {
+                position: absolute;
+                display: inline-block;
+                top: 50%;
+                margin-top: -1.5rem;
+                height: 3rem;
+                width: 3rem;
+                text-align: center;
+            }
+            
+            .money table {
+                color: #000;
+                font-size: .93913rem;
+                line-height: 2.25rem;
+                border-spacing: 1px;
+                padding-left: 1.5rem;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .money td {
+                text-align: center;
+                border: none;
+                background-color: #f8f8f8;
+            }
+            
+            .money th {
+                background-color: #efefef;
+                color: #999;
+            }
+            
+            .money .award {
+                position: relative;
+                color: #ec584e;
+            }
+            
+            .money .award .copy {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: -100%;
+                background-color: #f8f8f8;
+            }
+            
+            .money .award .copy-btn {
+                position: absolute;
+                top: .9rem;
+                bottom: .9rem;
+                left: 1rem;
+                right: 1rem;
+                display: block;
+                text-decoration: none;
+                line-height: 2.7rem;
+                text-align: center;
+                color: #fff;
+                background-color: #ec584e;
+                border-radius: 5px;
+            }
+            .money .award .ordercopy-btn {
+                background-color: #ff910e;
+            }
+            /* 比赛数据 */
+            
+            .match {
+                height: 4.349rem;
+                overflow: hidden;
+                border: 1px solid #f0f0f0;
+                color: #000;
+                /*height: 4.041667rem;*/
+                margin: .75rem 0 1.041667rem;
+            }
+            .match[race_type="JCZQ"]{
+                border: 1px solid #ffffff;
+                background: url(ftRaceBackGroundPath) no-repeat;
+                background-size: 100% 4.349rem;
+            }
+            .match[race_type="JCLQ"]{
+                border: 1px solid #ffffff;
+                background: url(btRaceBackGroundPath) no-repeat;
+                background-size: 100% 4.349rem;
+            }
+            
+            .match h3 {
+                /*竞足 周日001 */
+                padding: .458333rem 0;
+                margin: 0 .541667rem;
+                font: .741667rem/1 normal;
+                color: #afafaf;
+            }
+            .match[race_type="JCZQ"] h3{
+                color: #4d962e;
+            }
+            .match[race_type="JCLQ"] h3{
+                color: #be9760;
+            }
+            
+            .match-info {
+                position: relative;
+                padding: 0 0.75rem;
+                margin-bottom: .666667rem;
+            }
+            
+            .match-info .home-team {
+                position: absolute;
+                left: 0.75rem;
+                top: 50%;
+                /*margin-top: -0.979167rem;*/
+            }
+            
+            .match-info .away-team {
+                position: absolute;
+                right: 0.75rem;
+                top: 50%;
+                /*margin-top: -0.979167rem;*/
+            }
+            
+            .home-team span {
+                float: left;
+            }
+            
+            .away-team span {
+                float: right;
+                text-align: right;
+            }
+            
+            .home-team span,
+            .away-team span {
+                line-height: 1.958333rem;
+                font-size: 0.875rem;
+            }
+            
+            .away-team img {
+                float: right;
+                height: 1.958333rem;
+                margin-left: .5rem;
+            }
+            
+            .home-team img {
+                float: left;
+                height: 1.958333rem;
+                margin-right: .5rem;
+            }
+            
+            .match-info .scores {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+            
+            .match-info .scores-notstart {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                font-size: 1rem;
+            }
+            
+            .match-info .score {
+                text-align: center;
+                font-size: 1rem;
+                padding-bottom: .25rem;
+                line-height: 1;
+            }
+            
+            .match-info .half {
+                text-align: center;
+                font-size: .8rem;
+                color: #959595;
+                line-height: 1;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            .face {
+                
+                height: 1.25rem;
+            }
+            .money .award-strong {
+                color: #000;
+            }
+            
+            a:link {
+                color: #448bdc
+            }
+            /* 未访问的链接 */
+            
+            a:visited {
+                color: #448bdc
+            }
+            /* 已访问的链接 */
+            
+            a:hover {
+                color: #448bdc
+            }
+            /* 鼠标移动到链接上 */
+            
+            a:active {
+                color: #448bdc
+            }
+            /* 选定的链接 */
+            
+            .clearfix:before,
+            .clearfix:after {
+                content: "";
+                display: table;
+            }
+            
+            .clearfix:after {
+                clear: both;
+            }
+            </style>
+            </head>
+    
+    <body>
+        replaceHtml
+    </body>
+    <script type="text/javascript">
+        var caipiao = (function() {
+                       var bodyUrl = 'floorTap'
+                       
+                       var request = 'request_wenzhang'
+                       var requestImage = 'requestImage_wenzhang'
+                       var requestFt = 'requestFt_wenzhang'
+                       var requestBt = 'requestBt_wenzhang'
+                       
+                       //    var total = -1;
+                       
+                       function getAjax(url, callback) {
+                       var request = new XMLHttpRequest();
+                       request.open('GET', url, true);
+                       
+                       request.onreadystatechange = function() {
+                       if (this.readyState === 4) {
+                       if (this.status >= 200 && this.status < 400) {
+                       // Success!
+                       var data = JSON.parse(this.responseText);
+                       callback(data);
+                       } else {
+                       // Error :(
+                       console.log('ajax访问出现错误！');
+                       }
+                       }
+                       };
+                       
+                       request.send();
+                       request = null;
+                       }
+                       
+                       function queryNode() {
+                       var doc = document;
+                       
+                       [].forEach.call(doc.querySelectorAll('p'), function(element, index) {
+                                       element.addEventListener('click', function(e) {
+                                                                e.stopPropagation();
+                                                                var role = e.target.getAttribute('data-role');
+                                                                if (role && role === 'at') return;
+                                                                window.location.href = bodyUrl;
+                                                                
+                                                                }, false);
+                                       });
+                       [].forEach.call(doc.querySelectorAll('img[src*="imageDataMidUrl"],img[src*="image.resource"]'), function(element, index) {
+                                       element.addEventListener('click', function(e) {
+                                                                e.stopPropagation();
+                                                                document.location = "myweb:imageClick:" + this.src;
+                                                                
+                                                                }, false);
+                                       });
+                       
+                       var anchors = doc.getElementsByTagName('a');
+                       var spans = doc.getElementsByTagName('span');
+                       var lens = Math.max(anchors.length, spans.length);
+                       var props;
+                       var i;
+                       var PrizeList = [];
+                       var MatchList = [];
+                       
+                       for (i = 0; i < lens; i++) {
+                       if (i < anchors.length) {
+                       props = anchors[i].dataset;
+                       if (props && props.type === 'tag' && props.tag === 'project') {
+                       // getPrize(anchors[i], props.id);
+                       PrizeList.push(anchors[i]);
+                       }
+                       }
+                       if (i < spans.length) {
+                       props = spans[i].dataset;
+                       if (props && props.type === 'tag' && props.tag === 'race') {
+                       // getMatch(spans[i], spans[i].getAttribute('biz_id'));
+                       MatchList.push(spans[i]);
+                       }
+                       }
+                       }
+                       //    var length1 = PrizeList.length ? PrizeList.length : 0;
+                       //    var length2 = MatchList.length ? MatchList.length : 0;
+                       //    total = length1 + length2;
+                       PrizeList.forEach(function(item) {
+                                         getPrize(item, item.dataset.id);
+                                         })
+                       MatchList.forEach(function(item) {
+                                         getMatch(item, item.getAttribute('biz_id'));
+                                         })
+                       
+                       
+                       
+                       }
+                       
+                       function getPrize(node, id) {
+                       var uid = 'replaceUserId'
+                       
+                       var url = request + '/client/service.json?service=PURCHASE_ORDER_QUERY_BY_PURCHASE_NO&purchaseNo=' + id + '&authedUserId=' + uid;
+                       var html;
+                       getAjax(url, function(data) {
+                               
+                               var info = data['response']['purchaseOrder'];
+                               if (!info) {
+                               console.log(data['response']['error']);
+                               return;
+                               }
+                               var myCopy = info.copy == false ? '-' : info.copyCountNum;
+                               var createrUserId = info.createrUserId;
+                               
+                               html = '<div class="money"  data-purchaseNo="' + info.purchaseNo + '" data-userInfo = "createrUserId=' + createrUserId + '&' + id + '"><img class="logo" src="' + requestImage + '/images/lottery/type/' + info.lotteryType.name + '.png">';
+                               html += '<table><colgroup span="1" width="30%"></colgroup>';
+                               html += '<colgroup span="2" width="20%"></colgroup>';
+                               html += '<colgroup span="1" width="30%"></colgroup>';
+                               html += '<tr><th>金额</th><th>倍数</th><th>复制数</th><th>奖金</th></tr>';
+                               if('purchaseType' in info){
+                               
+                               if(info.purchaseType.name==='BLANK_ENTRY_SINGLE_FEE_UNFIXED'&&info.entryAmount===0){
+                               html += '<tr><td>' + info.totalPaidFee + '元</td><td>' + '-</td>';
+                               }else{
+                               html += '<tr><td>' + info.totalPaidFee + '元</td><td>' + info.multiple + '倍</td>';
+                               }
+                               }else{
+                               html += '<tr><td>' + info.totalPaidFee + '元</td><td>' + info.multiple + '倍</td>';
+                               }
+                               
+                               html += '<td>' + myCopy + '</td>';
+                               html += getTD(info, 'appsPurchaseNo' +'/'+ info.appPurchaseNo, uid === info.createrUserId);
+                               html += '</tr></table></div>';
+                               node.outerHTML = html;
+                               createEvent(info.purchaseNo);
+                               });
+                       }
+                       
+                       function getTD(info, url, isMe) {
+                       
+                       var html;
+                       var isZero = '';
+                       if (info.prized) {
+                       isZero = info.prizeFee === 0 ? 'award-strong' : '';
+                       html = '<td class="award  ' + isZero + '  ">' + info.prizeFee.toFixed(2) + '元</td>';
+                       } else if (!info.copyable) {
+                       html = '<td class="award award-strong">-</td>';
+                       } else if (info.copyable && !isMe) {
+                       if (info.platformCreationType.name !== 'CAIZHAN_91') {
+                       
+                       }
+                       url = url+'/'+ info.platformCreationType.name + '/' +info.platformCreationType.message;
+                       if(info.entryAmount === 0){
+                       return '<td class="award"><div class="copy"><a href="' + url + '" data-role="copy-btn" class="copy-btn ordercopy-btn">预约</a></div></td>';
+                       }
+                       return '<td class="award"><div class="copy"><a href="' + url + '" class="copy-btn">复制</a></div></td>';
+                       }
+                       else {
+                       html = '<td class="award award-strong">-</td>';
+                       }
+                       return html;
+                       }
+                       
+                       function getMatch(node, id) {
+                       //var url = 'http://jchapi.huored.net/client/service.json?service=JCZQ_DATA_QUERY_BY_BIZID&jczqBizId=' + id;
+                       var url = request + '/client/service.json?service=JCZQ_DATA_QUERY_BY_BIZID&jczqBizId=' + id;
+                       var jcData = 'jczqData';
+                       var typeName = '竞足';
+                       var logoDomain = requestFt;
+                       var raceType = node.getAttribute('race_type');
+                       if( raceType === 'JCLQ'){
+                       url = request + '/client/service.json?service=JCLQ_DATA_QUERY_BY_BIZID&jclqBizId=' + id;
+                       jcData = 'jclqData';
+                       typeName = '竞篮';
+                       typeName = '';
+                       logoDomain = requestBt;
+                       }
+                       var html;
+                       
+                       getAjax(url, function(data) {
+                               var info = data['response'][jcData];
+                               if (!info) {
+                               console.log(data['response']['error']);
+                               return;
+                               }
+                               html = '<div class="match clearfix" data-id="' + id + '" race_type="' + raceType+ '">';
+                               html += '<h3>' + '' + info.gameNo + ' ' + info.gameName + ' ' + info.startDate.slice(5, 16) + '</h3>';
+                               html += '<div class="match-info"><div class="home-team">';
+                               //html += '<img  src="http://ft.huored.net/team/logo/' + info.innerHomeTeamId + '.resource?default=1">';
+                               if (raceType === 'JCZQ') {
+                               html += '<img  src="' + logoDomain + '/team/logo/' + info.innerHomeTeamId + '.resource?&type=h">';
+                               html += '<span class="text-inline">' + info.homeTeamName + '</span></div>';
+                               //html += '<div class="away-team"><img src="http://ft.huored.net/team/logo/' + info.innerGuestTeamId + '.resource?default=1">';
+                               html += '<div class="away-team"><img src="' + logoDomain + '/team/logo/' + info.innerGuestTeamId + '.resource?&type=g">';
+                               html += '<span class="text-inline">' + info.guestTeamName + '</span></div>';
+                               }else if (raceType === 'JCLQ') {
+                               html += '<img  src="' + logoDomain + '/team/logo/' + info.innerGuestTeamId + '.resource?type=g">';
+                               html += '<span class="text-inline">' + info.guestTeamName + '</span></div>';
+                               //html += '<div class="away-team"><img src="http://ft.huored.net/team/logo/' + info.innerGuestTeamId + '.resource?default=1">';
+                               html += '<div class="away-team"><img src="' + logoDomain + '/team/logo/' + info.innerHomeTeamId + '.resource?type=h">';
+                               html += '<span class="text-inline">' + info.homeTeamName + '</span></div>';
+                               }
+                               
+                               if(info.fullHomeScore === -1){
+                               html += '<div class="scores-notstart">VS</div></div></div>';
+                               }
+                               else if (raceType === 'JCZQ') {
+                               html += '<div class="scores"><div class="score">' + info.fullHomeScore + ':' + info.fullGuestScore + '</div>';
+                               html += '<div class="half">半场' + info.halfHomeScore + ':' + info.halfGuestScore + '</div></div></div></div>';
+                               }
+                               else if (raceType === 'JCLQ') {
+                               html += '<div class="scores"><div class="score">' + info.fullGuestScore + ':' + info.fullHomeScore + '</div>';
+                               html += '<div class="half">总分' + (info.fullHomeScore  + info.fullGuestScore) + ' 分差' + (info.fullHomeScore - info.fullGuestScore) + '</div></div></div></div>';
+                               }
+                               node.outerHTML = html;
+                               createMatchEvent(id);
+                               });
+                       }
+                       function createEvent(id) {
+                       var element = document.querySelector('.money[data-purchaseNo="' + id + '"]');
+                       if (element) {
+                       element.addEventListener('click', function(e) {
+                                                e.stopPropagation();
+                                                if (e.target.getAttribute('data-role') !== 'copy-btn') {
+                                                window.location.href = this.dataset.userinfo;
+                                                }
+                                                });
+                       }
+                       }
+                       
+                       function createMatchEvent(id) {
+                       var element = document.querySelector('.match[data-id="' + id + '"]');
+                       if (element) {
+                       element.addEventListener('click', function(e) {
+                                                e.stopPropagation();
+                                                //window.location.href = 'bizid='+id +'&innerRaceId'+info.innerRaceId;
+                                                if(element.getAttribute('race_type') === 'JCLQ'){
+                                                window.location.href = 'btbizid=' + id;
+                                                return;
+                                                }
+                                                window.location.href = 'bizid=' + id;
+                                                })
+                       }
+                       }
+                       return {
+                       init: queryNode
+                       }
+                       })();
+                       
+                       document.addEventListener('DOMContentLoaded', function() {
+                                                 caipiao.init();
+                                                 });
+        </script>
+    
+    
+    
+</html>
